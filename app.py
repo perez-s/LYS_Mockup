@@ -151,14 +151,6 @@ with tab2:
             tipo_observacion = st.text_input("Tipo de Observación")
             autorizacion_cargue = st.selectbox("Autorización Cargue Sistema Comercial", ["Sí", "No"])
             evidencia_fotografica = st.camera_input("📸 Evidencia Fotográfica")
-            canvas_result = st_canvas(
-                stroke_width=1,
-                stroke_color= "#000000",
-                background_color="#7a7474",
-                height=150,
-                key="canvas",
-            )           
-
 
         # Labores realizadas (tabla editable)
         st.subheader("🛠️ Labores Realizadas")
@@ -167,9 +159,30 @@ with tab2:
             "Contenedores 1100 LTS, 1, 1.1\nContenedores 800 LTS, 1, 0.8"
         )
 
+        col3, col4 = st.columns(2)
+        with col3:
+            st.write("Firma 1")
+            canvas_result = st_canvas(
+                stroke_width=1,
+                stroke_color= "#000000",
+                background_color="#7a7474",
+                height=150,
+                key="canvas",
+                update_streamlit=True
+            )      
+        with col4:
+            st.write("Firma 2")
+            canvas_result = st_canvas(
+                stroke_width=1,
+                stroke_color= "#000000",
+                background_color="#7a7474",
+                height=150,
+                key="canvas2",
+                update_streamlit=True
+            )   
         # Botón
         submit = st.form_submit_button("Guardar Aforo")
-
+         
     if submit:
         # Procesar tabla de labores
         labores = []
