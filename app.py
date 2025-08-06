@@ -7,7 +7,7 @@ import plotly.express as px
 # Título de la aplicación
 
 st.set_page_config(page_title="LYS DEMO", layout="wide")
-st.image("assets/logo_lys.png", width=500, use_column_width=True)
+st.image("assets/logo_lys.png", width=200, use_container_width=True)
 
 
 st.title("LYS DEMO - HERRAMIENTA DE GESTIÓN DIGITAL")
