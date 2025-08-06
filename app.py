@@ -151,7 +151,6 @@ with tab2:
             autorizacion_cargue = st.selectbox("Autorización Cargue Sistema Comercial", ["Sí", "No"])
             evidencia_fotografica = st.camera_input("📸 Evidencia Fotográfica")
             canvas_result = st_canvas(
-                fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
                 stroke_width=1,
                 stroke_color= "#000000",
                 background_color="#7a7474",
