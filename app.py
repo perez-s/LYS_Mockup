@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 from datetime import datetime, timedelta
 from streamlit_drawable_canvas import st_canvas
 import plotly.express as px
