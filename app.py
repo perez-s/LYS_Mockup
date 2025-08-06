@@ -165,20 +165,20 @@ with tab2:
             canvas_result = st_canvas(
                 stroke_width=1,
                 stroke_color= "#000000",
-                background_color="#7a7474",
+                background_color="#F0F2F6",
                 height=150,
                 key="canvas",
-                update_streamlit=True
+                update_streamlit=False
             )      
         with col4:
             st.write("Firma 2")
             canvas_result = st_canvas(
                 stroke_width=1,
                 stroke_color= "#000000",
-                background_color="#7a7474",
+                background_color="#F0F2F6",
                 height=150,
                 key="canvas2",
-                update_streamlit=True
+                update_streamlit=False
             )   
         # Botón
         submit = st.form_submit_button("Guardar Aforo")
