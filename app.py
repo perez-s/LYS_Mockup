@@ -347,7 +347,7 @@ with tab4:
 
 
 
-    st.title("📊 Dashboard Integral - Empresa de Aseo")
+    st.title("📊 Dashboard Integral")
 
     # ==========================
     # Datos de Muestra
