@@ -17,7 +17,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "Modulo de Hoja de ruta",
     "Modulo de Aforos",
     "Modulo de PQR",
-    "Modulo de Dasboard",
+    "Modulo de Dashboard",
     "Modulo de Cartera"    
 ])
 
